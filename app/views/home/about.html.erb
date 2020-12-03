@@ -1,0 +1,48 @@
+<h1>About Project</h1>
+<br/>
+<h2>Challenge Background:</h2>
+We have sets of records representing football players' rushing statistics. All records have the following attributes:
+<ul>
+	<li>Player (Player's name)</li>
+	<li>Team (Player's team abbreviation)</li>
+	<li>Pos (Player's postion)</li>
+	<li>Att/G (Rushing Attempts Per Game Average)</li>
+	<li>Att (Rushing Attempts)</li>
+	<li>Yds (Total Rushing Yards)</li>
+	<li>Avg (Rushing Average Yards Per Attempt)</li>
+	<li>Yds/G (Rushing Yards Per Game)</li>
+	<li>TD (Total Rushing Touchdowns)</li>
+	<li>Lng (Longest Rush -- a T represents a touchdown occurred)</li>
+	<li>1st (Rushing First Downs)</li>
+	<li>1st% (Rushing First Down Percentage)</li>
+	<li>20+ (Rushing 20+ Yards Each)</li>
+	<li>40+ (Rushing 40+ Yards Each)</li>
+	<li>FUM (Rushing Fumbles)</li>
+</ul>
+
+<h2>Given:</h2>
+A sample data file rushing.json.
+<br/><br/>
+<h2>Challenge Requirements:</h2>
+Create a web app (The system should be able to potentially support larger sets of data on the order of 10k records)
+<ul>
+	<li>Create a webpage which displays a table with the contents of rushing.json</li>
+	<li>The user should be able to sort the players by Total Rushing Yards, Longest Rush and Total Rushing Touchdowns</li>
+	<li>The user should be able to filter by the player's name</li>
+	<li>The user should be able to download the sorted data as a CSV, as well as a filtered subset</li>
+</ul>
+<h2>Installation and running this solution</h2>
+This problem has been solved using Javascript and Ruby on Rails framework
+<ul>
+	<li>Ruby 2.7.2</li>
+	<li>Rails 6.0.3.4</li>
+</ul>
+To run this project one should have Ruby on Rails setup in his/her machine. The file <strong>rushing.json</strong> is located in /public folder of the project. One can replace this json file. If the json file is replaced with different name, one should rename the json file mentioned in Line#3 of playersrushingdata.js file located in /app/javascript/packs
+<br/><br/>
+Use Git Bash or cmd to run this application:
+<ul>
+	<li>Go to project location using Git Bash or cmd</li>
+	<li>Command "rails s" to run the server</li>
+	<li>Visit "http://localhost:3000/" in your browser</li>
+	<li>Use "search box" for filtering, respective "Up" or "Down" arrows for sorting, "Download as CSV" button for downloading data</li>
+</ul>
